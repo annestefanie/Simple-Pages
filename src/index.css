@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Instrument Sans", sans-serif;
+  --font-serif: "Instrument Serif", serif;
+
+  /* PALETA DA MARCA */
+  --color-paper: #FFF7EB;
+  --color-ink: #1A1A1A;
+  --color-amber: #E89A14;
+  --color-rose: #F4A2B2;
+  --color-aqua: #83D7E4;
+  --color-brown: #5C2D13;
+
+  /* PALETA SEMÂNTICA */
+  --color-background: #FFF7EB;
+  --color-foreground: #1A1A1A;
+  --color-primary: #E89A14;
+  --color-secondary: #5C2D13;
+  --color-muted: #5C2D13;
+  --color-border: #5C2D13;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+button, a, select, option{
+  cursor: pointer;
+}
