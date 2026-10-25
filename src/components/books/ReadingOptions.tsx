@@ -4,9 +4,10 @@ import bookIcon from "../../assets/book.png"
 interface ReadingOptionsProps{
     isReadingOptionsOpen: boolean;
     onClose: () => void;
+    openReadingForm: () => void;
 }
 
-export function ReadingOptions({isReadingOptionsOpen, onClose}: ReadingOptionsProps){
+export function ReadingOptions({isReadingOptionsOpen, onClose, openReadingForm}: ReadingOptionsProps){
 
     return (
         <>
@@ -21,7 +22,7 @@ export function ReadingOptions({isReadingOptionsOpen, onClose}: ReadingOptionsPr
                     width="w-[50%]"
                 />
                 <div className="w-[50%] h-50 bg-white border-1 border-t-0 rounded-xl rounded-t-none flex items-center justify-center gap-6">
-                    <button className="w-70 p-3 w-[45%] h-30 bg-amber rounded-xl border-1 flex flex-col items-center justify-center">
+                    <button onClick={openReadingForm} className="w-70 p-3 w-[45%] h-30 bg-amber rounded-xl border-1 flex flex-col items-center justify-center">
                         <h3 className="text-3xl font-serif text-ink">Add Manually</h3>
                         <p className="w-60 font-mono text-sm/4 text-ink">ENTER THE BOOK DETAILS AND UPLOAD YOUR COVER.</p>
                     </button>

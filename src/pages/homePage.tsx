@@ -11,6 +11,7 @@ import { BookCard } from '../components/books/BookCard';
 import { useState } from 'react';
 import { Clock } from '../components/clock/Clock';
 import { ReadingOptions } from '../components/books/ReadingOptions';
+import { ReadingForm } from '../components/books/ReadingForm';
 
 export function HomePage(){
     const [isClockOpen, setIsClockOpen] = useState(false)
@@ -31,6 +32,17 @@ export function HomePage(){
 
     function closeReadingOptions(){
         setIsReadingOptionsOpen(false);
+    }
+
+    const [isReadingFormOpen, setIsReadingFormOpen] = useState(false);
+
+    function openReadingForm() {
+        setIsReadingFormOpen(true);
+        closeReadingOptions();
+    }
+
+    function closeReadingForm(){
+        setIsReadingFormOpen(false);
     }
 
     return(
@@ -83,8 +95,13 @@ export function HomePage(){
             <ReadingOptions 
                 isReadingOptionsOpen={isReadingOptionsOpen}
                 onClose={closeReadingOptions}
+                openReadingForm={openReadingForm}
             />
 
+            <ReadingForm 
+                isReadingFormOpen={isReadingFormOpen}
+                onClose={closeReadingForm}
+            />
         </>
     )
 }
