@@ -11,7 +11,7 @@ export function SearchBar(){
         }
 
     return(
-        <section className="flex flex-col w-full items-center">
+        <section className="flex flex-col w-full items-center ">
         {isSearchOpen &&(
             <>
             <FakeNav 
@@ -23,9 +23,9 @@ export function SearchBar(){
                 onClose={closeModal}
             />
 
-            <div className=" bg-white rounded-b-xl w-[80%] shadow-sm border-1 border-t-0 border-ink">
+            <div className=" bg-white rounded-b-xl w-[80%] shadow-sm border border-border border-t-0 border-ink shadow-xl">
                 
-                <input className="w-full outline-none p-2 font-mono" type="text" placeholder="EX: ROMEU AND JULIET" />
+                <input className="w-full outline-none p-2 " type="text" placeholder="EX: ROMEU AND JULIET" />
             </div>
             </>
         )}

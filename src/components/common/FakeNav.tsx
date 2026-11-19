@@ -23,7 +23,7 @@ export function FakeNav({icon, text, textColor="text-ink", color="bg-ink", width
             <div 
                 className={`flex justify-between p-3 rounded-t-xl items-center border-1 border-ink shadow-sm ${color} ${width} ${textColor} `}>
                     <img className="w-4 h-4" src={icon} alt="Search" />
-                    <p className="font-serif text-xl">{text}</p>  
+                    <p className=" text-xl font-code tracking-tighter">{text}</p>  
                     <CloseBtn onClick={onClose} blackIcon={blackIcon} />
             </div>
         </>

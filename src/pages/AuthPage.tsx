@@ -15,8 +15,8 @@ export function AuthPage() {
     return (
         <FlexLayout gap="gap-10" bg='bg-background' padding='p-10'>
             <section className='flex flex-col items-center justify-center'>
-                <h2 className="font-mono font-normal text-xl text-center">{isLoginMode ? "WELCOME BACK TO" : "WELCOME TO"}</h2>
-                <h1 className="font-serif font-black text-5xl text-center">Simple Pages</h1>
+                <h2 className="font-normal text-xl text-center">{isLoginMode ? "WELCOME BACK TO" : "WELCOME TO"}</h2>
+                <h1 className="font-black text-5xl text-center">Simple Pages</h1>
                 <img className="w-120 h-120 object-cover" src={catHomePage} alt="Cat" />
             </section>
         
@@ -39,7 +39,7 @@ export function AuthPage() {
                                     <strong>GO</strong>
                             </button>
                             
-                            {isLoginMode && <a href="#" className='text-black text-center font-normal font-mono uppercase underline'>
+                            {isLoginMode && <a href="#" className='text-black text-center font-normal uppercase underline'>
                                 <small>Forgot your password?</small>
                             </a>}
 
